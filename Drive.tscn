@@ -1,9 +1,19 @@
-[gd_scene format=3 uid="uid://barxk3h4wq1bq"]
+[gd_scene load_steps=4 format=3 uid="uid://barxk3h4wq1bq"]
+
+[ext_resource type="Script" uid="uid://q1f0qv15eqph" path="res://Scripts/Auto.cs" id="1_5im2s"]
+[ext_resource type="Texture2D" uid="uid://blju8l5aosgo5" path="res://Sprites/Formula64x64/black_car.png" id="2_ql7m1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hhscq"]
+size = Vector2(28, 53)
 
 [node name="Game" type="Node2D"]
 
 [node name="Auto" type="CharacterBody2D" parent="."]
+script = ExtResource("1_5im2s")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Auto"]
+[node name="Sprite2D" type="Sprite2D" parent="Auto"]
+texture = ExtResource("2_ql7m1")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Auto"]
+position = Vector2(0, -4.5)
+shape = SubResource("RectangleShape2D_hhscq")
