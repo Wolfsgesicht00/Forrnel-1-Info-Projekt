@@ -30,8 +30,8 @@ if(maxv>0)GD.Print(maxv);
   Rotation += turnInput * 2.5f * dt;
 
   float moveInput = 0f;
-    if (Input.IsActionPressed("Acceleration")) moveInput += 2.5f;
-    if (Input.IsActionPressed("Brake")) moveInput -= 2.5f;
+    if (Input.IsActionPressed("Acceleration")) moveInput += 1.7f;
+    if (Input.IsActionPressed("Brake")) moveInput -= 1.7f;
    forward = Vector2.Up.Rotated(Rotation);
    
     if(Velocity.Length() > maxv){
@@ -43,7 +43,7 @@ if(maxv>0)GD.Print(maxv);
     if(!Input.IsActionPressed("Acceleration") && !Input.IsActionPressed("Brake")){
       Velocity *= 1f - (0.1f * dt); }
     float neuGeschwindigkeit = Velocity.Length()+moveInput;
-    neuGeschwindigkeit = Mathf.Clamp(neuGeschwindigkeit, 0f, 100f);
+    neuGeschwindigkeit = Mathf.Clamp(neuGeschwindigkeit, 0f, 200f);
     if (Velocity.Length() > 0)
         { Velocity = Velocity.Normalized() * neuGeschwindigkeit;}
         else if (moveInput > 0) 

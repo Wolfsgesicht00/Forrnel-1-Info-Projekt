@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Forrnel 1 Projekt")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8b9f744e7b30384d42d99c633eb8bb05efb108cf")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+72a8015dfb13c6ed94f715b52d67b64864944660")]
 [assembly: System.Reflection.AssemblyProductAttribute("Forrnel 1 Projekt")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Forrnel 1 Projekt")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
