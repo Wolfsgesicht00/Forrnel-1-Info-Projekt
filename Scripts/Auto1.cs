@@ -38,14 +38,14 @@ public override void _PhysicsProcess(double delta)
       Velocity *= 0.999f; 
 	  moveInput = 0;}
     	Vector2 neuGeschwindigkeit = (Velocity.Length() + moveInput)*forward;
-    	neuGeschwindigkeit = neuGeschwindigkeit.LimitLength(200);
+    	neuGeschwindigkeit = neuGeschwindigkeit.LimitLength(400);
 		if(Velocity.Length() <= maxv && drifting == false){
 			Velocity = neuGeschwindigkeit;
-			GD.Print("driving forward");
+			//GD.Print("driving forward");
 		}else if (Velocity.Length() > maxv){
 		//Velocity = Drift(dt) * Velocity.Length();
-		Velocity = 0.7f*Velocity;
-		GD.Print("drifting");
+		Velocity = 0.6f*Velocity;
+		//GD.Print("drifting");
 		drifting = true;}
 		if(Velocity.Length()< 30) drifting = false;
 		deltatime += dt;
@@ -77,7 +77,7 @@ public override void _PhysicsProcess(double delta)
   		else reibung = 2.0f;
 	float drotation = Mathf.AngleDifference(Rotation, currentRotation);
 	if (vel.Length() > 0 && Math.Abs(drotation) > 0.001f){
-        kurvenradius = Math.Abs(vel.Length() / (drotation / dt));}
+        kurvenradius = 2*Math.Abs(vel.Length() / (drotation / dt));}
     else kurvenradius = 9999f;
 	maxv = 6* Math.Sqrt(kurvenradius * 10f * reibung);
     currentRotation = Rotation;}

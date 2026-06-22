@@ -10,7 +10,7 @@ public partial class GameController : Node
  public override void _Ready(){
     Player = GetNode<Auto1>("/root/Game/Auto");
     PlayerCollision = GetNode<Area2D>("Auto/Area2D");
-    Track =  GetNode<TileMapLayer>("Track1/TileMapLayer");
+    Track =  GetNode<TileMapLayer>("/root/Game/Track2/TileMapLayer");
     GD.Print(Track);
     
  }

@@ -1,22 +1,22 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1782027965
+::res://::1782123524
 car-accelerating_A_minor.wav::AudioStreamWAV/AudioStreamWAV::512620353037305379::1781354370::1781354380::1::::<><><>0<>0<>b704d8f0713835aab753ea5a143003c7<>res://.godot/imported/car-accelerating_A_minor.wav-08343aa895706c1bd2e9101e33e1a162.sample::
-Drive.tscn::PackedScene::2422930937099915482::1781681421::0::1::::<><><>0<>0<><>::uid://6dvjyaxn55xh::::res://Scripts/GameController.cs<>uid://rwhg2401gc5c::::res://Scripts/Auto1.cs<>uid://blju8l5aosgo5::::res://Sprites/Formula64x64/black_car.png<>uid://dexinvc33mcbm::::res://Sprites/Race_Tileset/Race_Tileset_Map.png
-enemy.tscn::PackedScene::7820334771214942990::1781681421::0::1::::<><><>0<>0<><>::uid://bdlempcy5c8cm::::res://Sprites/Formula64x64/red_car.png
+Drive.tscn::PackedScene::2422930937099915482::1782029612::0::1::::<><><>0<>0<><>::uid://6dvjyaxn55xh::::res://Scripts/GameController.cs<>uid://rwhg2401gc5c::::res://Scripts/Auto1.cs<>uid://blju8l5aosgo5::::res://Sprites/Formula64x64/black_car.png<>uid://dexinvc33mcbm::::res://Sprites/Race_Tileset/Race_Tileset_Map.png<>uid://cjc5lgh4yxhpx::::res://Sprites/Track small.png
+enemy.tscn::PackedScene/PackedScene::7820334771214942990::1781681421::0::1::::<><><>0<>0<><>::uid://bdlempcy5c8cm::::res://Sprites/Formula64x64/red_car.png
 icon.svg::CompressedTexture2D/CompressedTexture2D::7776672770319917568::1778652673::1778652802::1::::<><><>0<>0<>4e074c42b951dd9fcd473354932a3d0c<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 README.md::TextFile/TextFile::-1::1781679558::0::1::::<><><>0<>0<><>::
 ::res://Scripts/::1781681343
-Auto1.cs::CSharpScript::1239063850249311670::1781679532::0::1::::<>CharacterBody2D<><>0<>0<><>::
+Auto1.cs::CSharpScript/CSharpScript::1239063850249311670::1781679532::0::1::::<>CharacterBody2D<><>0<>0<><>::
 Auto weg.cs::CSharpScript/CSharpScript::5250436095691810621::1781520895::0::1::::<><><>0<>0<><>::
-EnemyController.cs::CSharpScript::5359602236625560722::1781681343::0::1::::<>Node2D<><>0<>0<><>::
-GameController.cs::CSharpScript::2183339676658428205::1781076036::0::1::::<>Node<><>0<>0<><>::
-NewScript.cs::CSharpScript::7396376671986211095::1779294989::0::1::::<>Node<><>0<>0<><>::
+EnemyController.cs::CSharpScript/CSharpScript::5359602236625560722::1781681343::0::1::::<>Node2D<><>0<>0<><>::
+GameController.cs::CSharpScript/CSharpScript::2183339676658428205::1781076036::0::1::::<>Node<><>0<>0<><>::
+NewScript.cs::CSharpScript/CSharpScript::7396376671986211095::1779294989::0::1::::<>Node<><>0<>0<><>::
 ::res://Sounds/::1781354379
 astonmartinvantagev12-ferrari-458-italia-sound-effect-going-fast-360530.mp3::AudioStreamMP3/AudioStreamMP3::2533576958155315341::1781354370::1781354379::1::::<><><>0<>0<>70b1ce7d6c9959c401e22b37362d4f71<>res://.godot/imported/astonmartinvantagev12-ferrari-458-italia-sound-effect-going-fast-360530.mp3-16f82b7901292de5f59b758eaa6b1f31.mp3str::
-::res://Sprites/::1781680893
-_0007_Track.png::CompressedTexture2D/CompressedTexture2D::284594426465561147::1781679981::1781680893::1::::<><><>0<>0<>82140bdbc09511c38b90f1a03cb15835<>res://.godot/imported/_0007_Track.png-6e82fbc00bc48afc5ff49120d5e952d1.ctex::
+::res://Sprites/::1782108032
 Mark 1 series_RaceCars.png::CompressedTexture2D/CompressedTexture2D::887298083139388765::1778657141::1778841276::1::::<><><>0<>0<>33a178eecc6b94f2ef99b546737c18ea<>res://.godot/imported/Mark 1 series_RaceCars.png-61e3f18bfb9eeca7960cad8c1616d8be.ctex::
 na_logo_forrnel1.png::CompressedTexture2D/CompressedTexture2D::8820240942492164349::1781354370::1781354380::1::::<><><>0<>0<>3f0c54363dafc8cc8b58ca8807e7a3c9<>res://.godot/imported/na_logo_forrnel1.png-2a03447b1d99802c08ab88cfb995a55d.ctex::
+Track small.png::CompressedTexture2D/CompressedTexture2D::5410511196456904649::1782108030::1782108032::1::::<><><>0<>0<>ae60eb69a2cafeeca8bc5878bd669706<>res://.godot/imported/Track small.png-ee64c9a6f235fc18429d3f4defd49eae.ctex::
 ::res://Sprites/Formula64x64/::1778656477
 AllCarsFormat.png::CompressedTexture2D/CompressedTexture2D::5845278620310976092::1778656376::1778656477::1::::<><><>0<>0<>98b216873c2e15b6a3f5f2ddeba1fad0<>res://.godot/imported/AllCarsFormat.png-55badaf999c4279d040db6ec07f8d81e.ctex::
 black_car.png::CompressedTexture2D/CompressedTexture2D::3178351258672593794::1778656376::1778656477::1::::<><><>0<>0<>0fbcf5b67a62097fde3ba3a921d3929c<>res://.godot/imported/black_car.png-8ed73645c8f387d5ed69340aa4bb7491.ctex::
@@ -39,6 +39,7 @@ yellow_tire.png::CompressedTexture2D/CompressedTexture2D::5049302816787683676::1
 ::res://Sprites/Full pack/color/white and black/Object and road/::1778656477
 0.png::CompressedTexture2D/CompressedTexture2D::3750634948383818441::1778656377::1778656477::1::::<><><>0<>0<>3a7064053617d467929f6aca11dcf326<>res://.godot/imported/0.png-3e9b0f32170ecf2d96e79776312ccd42.ctex::
 1.png::CompressedTexture2D/CompressedTexture2D::5223561531936949224::1778656377::1778656477::1::::<><><>0<>0<>2090a6eed341c01cce9a33bebcb384b1<>res://.godot/imported/1.png-322ad62a3f7d2f4bf9960ed7125837db.ctex::
-::res://Sprites/Race_Tileset/::1778841276
+::res://Sprites/Race_Tileset/::1782028096
+_0007_Track.png::CompressedTexture2D/CompressedTexture2D::284594426465561147::1781679981::1782028096::1::::<><><>0<>0<>80bba769101cd5324513883142deb552<>res://.godot/imported/_0007_Track.png-5f794b2adb6ca6eef318c0df7fee9635.ctex::
 Race_Tileset.png::CompressedTexture2D/CompressedTexture2D::8010113810149821937::1778657141::1778841276::1::::<><><>0<>0<>617c4f2b4cc1dd491cd100d815d0a670<>res://.godot/imported/Race_Tileset.png-5f384c612aa1bbeaf6664cdfe3eec6cb.ctex::
 Race_Tileset_Map.png::CompressedTexture2D/CompressedTexture2D::7488008172627748054::1778657141::1778841276::1::::<><><>0<>0<>978af8da4d5926b670e1e7ccd283bb06<>res://.godot/imported/Race_Tileset_Map.png-64af66e605638ebc8fa68d2a01e3e6e3.ctex::
