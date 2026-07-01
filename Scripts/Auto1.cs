@@ -1,5 +1,6 @@
 using Godot;
 using System;
+using System.Threading.Tasks.Dataflow;
 
 public partial class Auto1 : CharacterBody2D
 {
@@ -11,10 +12,16 @@ private double maxv = 100;
 float deltatime = 0;
 Vector2 forward;
 bool drifting = false;
+private Sprite2D sprite;
+private float turnfactor;
+
+public override void _Ready(){
+	sprite = GetNode<Sprite2D>("/root/Game/Auto/Auto-View");
+	sprite.GlobalPosition = GlobalPosition;
+}
 
 public override void _PhysicsProcess(double delta)
 {
-		//GD.Print(GlobalPosition);
 		float dt = (float) delta;
 
 //Berechnung Reibung und Kurvenfahrt
@@ -24,7 +31,7 @@ public override void _PhysicsProcess(double delta)
 	float turnInput = 0f;
     if (Input.IsActionPressed("Turn-Right")) turnInput += 1f;
     if (Input.IsActionPressed("Turn-Left")) turnInput -= 1f;
-  	Rotation += turnInput * 2.5f * dt;	
+  	Rotation += turnInput * 2.5f *turnfactor* dt;	
 
 //Movement
 	float moveInput = 0f;
@@ -32,8 +39,7 @@ public override void _PhysicsProcess(double delta)
     if (Input.IsActionPressed("Brake")) {if(Velocity.Length() > 0) {Velocity = Velocity.Normalized()*(Velocity.Length()-1.7f);
 	moveInput = 0;}}
    	forward = Vector2.Up.Rotated(Rotation);
-	//GD.Print(forward);
-	//Friction Braking
+//Friction Braking
 	if(!Input.IsActionPressed("Acceleration") && !Input.IsActionPressed("Brake")){
       Velocity *= 0.999f; 
 	  moveInput = 0;}
@@ -41,15 +47,25 @@ public override void _PhysicsProcess(double delta)
     	neuGeschwindigkeit = neuGeschwindigkeit.LimitLength(400);
 		if(Velocity.Length() <= maxv && drifting == false){
 			Velocity = neuGeschwindigkeit;
-			//GD.Print("driving forward");
 		}else if (Velocity.Length() > maxv){
 		//Velocity = Drift(dt) * Velocity.Length();
 		Velocity = 0.6f*Velocity;
-		//GD.Print("drifting");
 		drifting = true;}
 		if(Velocity.Length()< 30) drifting = false;
 		deltatime += dt;
 		MoveAndSlide();
+
+
+		//Debugging Part
+		int zähler = 0;
+	if(Input.IsActionJustPressed("ui_home")){ 
+	GD.Print("Point" + zähler + ":" + GlobalPosition);
+	GD.Print("Ausrichtung" + zähler + ":" + Rotation);
+	zähler += 1;}
+	//Point0:(-375.34137, -626.50977)
+	//Point1:(-991.7255, -155.20346)
+	//Point2:(-1497.6804, -64.5947)
+
 }
 	
 
@@ -59,20 +75,21 @@ public override void _PhysicsProcess(double delta)
 	if(Velocity.Length() > 1){
 		float minradius = (Velocity.Length()*Velocity.Length())/(reibung*10f);
     float deltaomega = Velocity.Length()/minradius;
-	//GD.Print(deltaomega + "Delta Omega");
     float maxTurn = deltaomega * dt*2000;
-	//GD.Print("Maxturn" + maxTurn);
 	double angleTo = Velocity.AngleTo(forward);
-	//GD.Print(angleTo + "Angleto");
 	float turn = (float) angleTo * 2;
 	turn = Mathf.Clamp(turn, -maxTurn, maxTurn);
 	velocity = Velocity.Rotated(turn).LimitLength(1);
-	//GD.Print("velocity " + velocity + " " + Velocity);
 	return velocity;}
 	else return new Vector2(0,0);
 
 }
 	public void BerechnungTurn(Vector2 vel, float dt){
+		if(Velocity.Length() > 200){
+			turnfactor = (float) (1/(0.001* Velocity.Length())); // ÄNDERN DAS IST SCHWACHSINN
+		}else if(Velocity.Length() == 0) turnfactor = 0;
+		else turnfactor = 1;
+
 	 if(isOffTrack) reibung = 1f;
   		else reibung = 2.0f;
 	float drotation = Mathf.AngleDifference(Rotation, currentRotation);

@@ -1,23 +1,25 @@
 using Godot;
 using System;
 
-public partial class Auto_View : Sprite2D
+public partial class Track_Checkpoint : Area2D
 {
-	private Camera2D cam;
-	private CharacterBody2D auto;
+	private bool isFinishLine = false;
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
-		cam = this.GetChild<Camera2D>(0);
-		auto = GetNode<CharacterBody2D>("/root/Game/Auto");
+		
 	}
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
 	public override void _Process(double delta)
 	{
-		this.Position = auto.GlobalPosition;
-		this.Rotation = auto.GlobalRotation;
+	}
 
-		
+	public bool on_area_entered(Node2D body){
+	 	return true;
+
+	}
+	public bool on_area_exited(Node2D body){
+		return true;
 	}
 }

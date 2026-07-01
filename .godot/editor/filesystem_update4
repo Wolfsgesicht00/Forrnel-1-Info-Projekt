@@ -1,9 +1,8 @@
+res://README.md
+res://Scripts/Controller-Scripts/GameController.cs
+res://Scripts/Model-Scripts/Track_Checkpoint.cs
+res://Scripts/Auto1.cs
 res://Drive.tscn
 res://enemy.tscn
-res://Scripts/Auto1.cs
-res://Scripts/NewScript.cs
-res://Scripts/EnemyController.cs
-res://Scripts/GameController.cs
-res://Scripts/View Scripts/Auto_View.cs
+res://Track_Checkpoint.tscn
 res://Scripts/Controller-Scripts/EnemyController.cs
-res://Scripts/Controller-Scripts/GameController.cs

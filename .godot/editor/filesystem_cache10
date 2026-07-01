@@ -1,18 +1,20 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1782201328
+::res://::1782830420
 car-accelerating_A_minor.wav::AudioStreamWAV/AudioStreamWAV::512620353037305379::1781354370::1781354380::1::::<><><>0<>0<>b704d8f0713835aab753ea5a143003c7<>res://.godot/imported/car-accelerating_A_minor.wav-08343aa895706c1bd2e9101e33e1a162.sample::
-Drive.tscn::PackedScene::2422930937099915482::1782201327::0::1::::<><><>0<>0<><>::uid://6dvjyaxn55xh::::res://Scripts/Controller-Scripts/GameController.cs<>uid://rwhg2401gc5c::::res://Scripts/Auto1.cs<>uid://blju8l5aosgo5::::res://Sprites/Formula64x64/black_car.png<>uid://dexinvc33mcbm::::res://Sprites/Race_Tileset/Race_Tileset_Map.png<>uid://cjc5lgh4yxhpx::::res://Sprites/Track small.png
-enemy.tscn::PackedScene::7820334771214942990::1782125940::0::1::::<><><>0<>0<><>::uid://bdlempcy5c8cm::::res://Sprites/Formula64x64/red_car.png
+Drive.tscn::PackedScene::2422930937099915482::1782729860::0::1::::<><><>0<>0<><>::uid://6dvjyaxn55xh::::res://Scripts/Controller-Scripts/GameController.cs<>uid://rwhg2401gc5c::::res://Scripts/Auto1.cs<>uid://blju8l5aosgo5::::res://Sprites/Formula64x64/black_car.png<>uid://dexinvc33mcbm::::res://Sprites/Race_Tileset/Race_Tileset_Map.png<>uid://cjc5lgh4yxhpx::::res://Sprites/Track small.png
+enemy.tscn::PackedScene::7820334771214942990::1782729860::0::1::::<><><>0<>0<><>::uid://bdlempcy5c8cm::::res://Sprites/Formula64x64/red_car.png
 icon.svg::CompressedTexture2D/CompressedTexture2D::7776672770319917568::1778652673::1778652802::1::::<><><>0<>0<>4e074c42b951dd9fcd473354932a3d0c<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 README.md::TextFile/TextFile::-1::1781679558::0::1::::<><><>0<>0<><>::
-::res://Scripts/::1782201327
-Auto1.cs::CSharpScript::1239063850249311670::1782126020::0::1::::<>CharacterBody2D<><>0<>0<><>::
+Track_Checkpoint.tscn::PackedScene::9006848900044241425::1782730528::0::1::::<><><>0<>0<><>::uid://ctqnp0msu8j2q::::res://Scripts/Model-Scripts/Track_Checkpoint.cs
+::res://Scripts/::1782201335
+Auto1.cs::CSharpScript::1239063850249311670::1782729561::0::1::::<>CharacterBody2D<><>0<>0<><>::
 Auto weg.cs::CSharpScript/CSharpScript::5250436095691810621::1781520895::0::1::::<><><>0<>0<><>::
-EnemyController.cs::CSharpScript/CSharpScript::5359602236625560722::1781681343::0::1::::<>Node2D<><>0<>0<><>::
-::res://Scripts/Controller-Scripts/::1782201327
-GameController.cs::CSharpScript::2183339676658428205::1782125723::0::1::::<><><>0<>0<><>::
-::res://Scripts/Model-Scripts/::1782201272
-::res://Scripts/View Scripts/::1782201305
+::res://Scripts/Controller-Scripts/::1782201335
+EnemyController.cs::CSharpScript::5359602236625560722::1781681343::0::1::::<>Node2D<><>0<>0<><>::
+GameController.cs::CSharpScript::2183339676658428205::1782730067::0::1::::<>Node<><>0<>0<><>::
+::res://Scripts/Model-Scripts/::1782728575
+Track_Checkpoint.cs::CSharpScript::6140276880855590610::1782728963::0::1::::<>Area2D<><>0<>0<><>::
+::res://Scripts/View Scripts/::1782281381
 ::res://Sounds/::1781354379
 astonmartinvantagev12-ferrari-458-italia-sound-effect-going-fast-360530.mp3::AudioStreamMP3/AudioStreamMP3::2533576958155315341::1781354370::1781354379::1::::<><><>0<>0<>70b1ce7d6c9959c401e22b37362d4f71<>res://.godot/imported/astonmartinvantagev12-ferrari-458-italia-sound-effect-going-fast-360530.mp3-16f82b7901292de5f59b758eaa6b1f31.mp3str::
 ::res://Sprites/::1782108032
